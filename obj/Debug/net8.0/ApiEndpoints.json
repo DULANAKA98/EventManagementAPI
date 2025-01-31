@@ -1,0 +1,102 @@
+[
+  {
+    "ContainingType": "EventManagementAPI.Controllers.EventsController",
+    "Method": "SellTickets",
+    "RelativePath": "api/Events/{id}/sell-tickets",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "ticketsToSell",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EventManagementAPI.Controllers.EventsController",
+    "Method": "SetTicketDetails",
+    "RelativePath": "api/Events/{id}/set-tickets",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "totalTickets",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EventManagementAPI.Controllers.EventsController",
+    "Method": "GetAdminSalesStatus",
+    "RelativePath": "api/Events/admin/sales-status",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EventManagementAPI.Controllers.EventsController",
+    "Method": "CreateEvent",
+    "RelativePath": "api/Events/create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "newEvent",
+        "Type": "EventManagementAPI.Models.Event",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EventManagementAPI.Controllers.EventsController",
+    "Method": "GetPartnerSalesStatus",
+    "RelativePath": "api/Events/partner/{partnerId}/sales-status",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "partnerId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EventManagementAPI.Controllers.PartnersController",
+    "Method": "RegisterPartner",
+    "RelativePath": "api/Partners/register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "partner",
+        "Type": "EventManagementAPI.Models.Partner",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
